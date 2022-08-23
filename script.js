@@ -1,6 +1,6 @@
 import { pokemonArray } from "./data/pokemon.js";
-
 //The function to use the object info and create the cards
+
 const pokeCards = (pokemon) => {
   return `<div class="card">
         <div class="card__content"> 
@@ -19,9 +19,20 @@ pokemonArray.forEach((pokemon) => {
   newContainer.innerHTML += pokeCards(pokemon);
 });
 
-//searchBar
+//searchBar - work in progress
+/*
 const searchBar = document.querySelector(".searchBar");
-const filter = document.querySelector("");
-searchBar.addEventListener("input", filterList);
+const highlight = document.querySelector(".card");
+const pokeNames = Object.values(pokemonArray);
 
-const filterList = () => {};
+searchBar.addEventListener("input", (e) => {
+  const value = e.target.value;
+  pokeNames.forEach((pokemon) => {
+    const isPresent = pokemon.name.includes(value);
+    if (isPresent) {
+      highlight.style.border = "5px solid #BFE3B4";
+      console.log(isPresent);
+    }
+  });
+});
+*/

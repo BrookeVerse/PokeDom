@@ -1057,5 +1057,4 @@ export const pokemonArray = [
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
   },
 ];
-
 export default pokemonArray;
