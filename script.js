@@ -7,7 +7,7 @@ const pokeCards = (pokemon) => {
 
             <div class="card__heading">${pokemon.name}</div>
             <img class="card__image" src ="${pokemon.sprite}"/>
-            <div class="card__text">${pokemon.name} (${pokemon.id}) is a ${pokemon.types.join(" & ")} type pokemon.</div>
+            <div class="card__text">${pokemon.name} (#${pokemon.id}) is a ${pokemon.types.join(" & ")} type pokemon.</div>
   
         </div>
    </div>`;
